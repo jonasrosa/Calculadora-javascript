@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=BioRhyme&amp;family=Space+Mono&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Calculadora</title>
+  </head>
+  <body>
+
+    <div class="container" ">
+      <Main class="calculadora" >
+        <div class="visor" >
+          <div class="operacao">
+          <h1 id="operacao" value="0"> </h1>
+          </div>
+          <div class="resultado"  >
+            <p>R:</p> <span><h1 id="resultado"></h1></span> 
+          </div>
+        
+        </div>
+        <div class="teclado">
+          <div class="col">
+
+            <div class="row">
+                <button class="tecla" onclick="limparOpreracao()"> C </button>
+                <button class="tecla"onclick="inserirNumero('+/-')">+/-</button>
+                <button class="tecla"onclick="inserirNumero('%')">%</button>
+                <button class="tecla"onclick="inserirNumero('/')">/</button>
+            </div>
+            <div class="row">
+                <button class="tecla" onclick="inserirNumero('7')">7</button>
+                <button class="tecla" onclick="inserirNumero('8')" >8</button>
+                <button class="tecla" onclick="inserirNumero('9')">9</button>
+                <button class="tecla" onclick="inserirNumero('*')" >*</button>
+            </div>
+            <div class="row">
+              <button class="tecla" onclick="inserirNumero('4')"> 4 </button>
+              <button class="tecla"onclick="inserirNumero('5')">5</button>
+              <button class="tecla"onclick="inserirNumero('6')">6</button>
+              <button class="tecla"onclick="inserirNumero('-')">-</button>
+            </div>
+            <div class="row">
+              <button class="tecla"onclick="inserirNumero('1')"> 1 </button>
+              <button class="tecla"onclick="inserirNumero('2')">2</button>
+              <button class="tecla"onclick="inserirNumero('3')">3</button>
+              <button class="tecla"onclick="inserirNumero('+')">+</button>
+            </div>
+            <div class="row">
+              <button class="tecla1">0</button>
+              <button class="tecla">.</button>
+              <button class="tecla" onclick="calculadora()">=</button>
+            </div>
+          
+        </div>
+           
+        </div>
+      </Main>
+
+    </div>
+
+    
+    <script src="index.js"></script>
+  </body>
+</html>
